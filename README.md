@@ -64,28 +64,26 @@ pnpm --filter @workspace/sage run dev
 ## Running Locally
 
 ### 1. Clone and install dependencies
-
 ```bash
-git clone <your-repo-url>
-cd workspace
+git clone 
 
-# Install frontend dependencies
 pnpm install
 ```
 
-### 2. Set up the Python environment
+> **Windows only:** If pnpm install fails with errors about missing native binaries, run this after:
+> ```powershell
+> pnpm add -w @esbuild/win32-x64@0.27.3 @rollup/rollup-win32-x64-msvc lightningcss-win32-x64-msvc
+> ```
 
+---
+
+### 2. Set up the Python backend
 ```bash
 cd artifacts/api-server
-
-# Install Python packages
 pip install -r requirements.txt
 ```
 
-### 3. Configure environment variables
-
-Create a `.env` file at the project root (or export these in your shell):
-
+Create a `.env` file at the project root:
 ```bash
 # Required for PostgreSQL. If not set, SQLite is used automatically.
 DATABASE_URL=postgresql://user:password@localhost:5432/sage_db
@@ -96,38 +94,43 @@ DJANGO_DEBUG=True
 PORT=8080
 ```
 
-### 4. Run the backend (Django)
-
-```bash
-# From the api-server directory
-bash start_django.sh
-```
-
-This script will:
-1. Apply all database migrations
-2. Seed the meal database (Indian foods + international items, ~160 entries)
-3. Start the Django development server on `http://localhost:8080`
-
-Or run each step manually:
-
+Then run migrations and seed the database:
 ```bash
 cd sage_backend
-
 python manage.py migrate --noinput
 python manage.py seed_meals
 python manage.py runserver 0.0.0.0:8080
 ```
 
-### 5. Run the frontend (React + Vite)
+The backend will start on `http://localhost:8080`
 
-In a separate terminal:
+---
 
+### 3. Run the frontend
+
+Open a **new terminal** from the project root:
+
+**Mac/Linux:**
 ```bash
-# From the workspace root
-pnpm --filter @workspace/sage run dev
+cd artifacts/sage
+PORT=3000 BASE_PATH="/" pnpm dev
 ```
 
-The frontend will start on `http://localhost:5173` (or the next available port).
+**Windows (PowerShell):**
+```powershell
+cd artifacts\sage
+$env:PORT=3000; $env:BASE_PATH="/"; pnpm dev
+```
+
+The frontend will start on `http://localhost:5173`
+
+---
+
+## Notes
+
+- The frontend requires both `PORT` and `BASE_PATH` environment variables to be set or it will not start.
+- Always run `pnpm install` from the **project root**, not from inside `artifacts/sage`.
+- This project uses pnpm workspaces with the `catalog:` protocol — **npm and yarn are not supported**.
 
 ---
 
