@@ -200,6 +200,112 @@ SAMPLE_MEALS = [
     {"name": "Sarson Da Saag", "calories": 200, "protein": 9, "carbs": 20, "fats": 9, "serving_size": "1 cup (200g)", "category": "North Indian"},
     {"name": "Makki Di Roti", "calories": 170, "protein": 4, "carbs": 32, "fats": 4, "serving_size": "1 roti (60g)", "category": "North Indian"},
     {"name": "Stuffed Paratha (mixed)", "calories": 320, "protein": 8, "carbs": 48, "fats": 12, "serving_size": "1 paratha", "category": "North Indian"},
+
+    # ITALIAN CUISINE
+    # ══════════════════════════════════════════════════════════════════════════
+    # ── Italian Starters & Salads ──────────────────────────────────────────────
+    {"name": "Caprese Salad (mozzarella, tomato, basil, olive oil)", "calories": 190, "protein": 12, "carbs": 8, "fats": 14, "serving_size": "1 serving (no extra dressing)", "category": "Italian Starter"},
+    {"name": "Bruschetta (tomato basil on toast)", "calories": 220, "protein": 6, "carbs": 28, "fats": 8, "serving_size": "2 slices", "category": "Italian Starter"},
+    {"name": "Minestrone Soup", "calories": 240, "protein": 10, "carbs": 35, "fats": 6, "serving_size": "1 bowl", "category": "Italian Soup"},
+    {"name": "Garlic Bread", "calories": 400, "protein": 10, "carbs": 50, "fats": 18, "serving_size": "4 pieces", "category": "Italian Bread"},
+
+    # ── Italian Pasta & Risotto ────────────────────────────────────────────────
+    {"name": "Spaghetti Marinara (tomato sauce)", "calories": 400, "protein": 14, "carbs": 75, "fats": 5, "serving_size": "1 plate", "category": "Italian Pasta"},
+    {"name": "Spaghetti Bolognese (meat sauce)", "calories": 500, "protein": 25, "carbs": 60, "fats": 18, "serving_size": "1 plate", "category": "Italian Pasta"},
+    {"name": "Fettuccine Alfredo", "calories": 650, "protein": 20, "carbs": 65, "fats": 35, "serving_size": "1 plate", "category": "Italian Pasta"},
+    {"name": "Lasagna (traditional with meat & cheese)", "calories": 550, "protein": 28, "carbs": 45, "fats": 28, "serving_size": "1 portion", "category": "Italian Pasta"},
+    {"name": "Mushroom Risotto", "calories": 475, "protein": 12, "carbs": 70, "fats": 15, "serving_size": "1 plate", "category": "Italian Rice"},
+    {"name": "Chicken Risotto", "calories": 550, "protein": 30, "carbs": 65, "fats": 18, "serving_size": "1 plate", "category": "Italian Rice"},
+
+    # ── Italian Pizza & Mains ──────────────────────────────────────────────────
+    {"name": "Margherita Pizza (1 slice, thin crust)", "calories": 250, "protein": 12, "carbs": 30, "fats": 10, "serving_size": "1 slice (1/8 of 12-inch)", "category": "Italian Pizza"},
+    {"name": "Pepperoni Pizza (1 slice)", "calories": 280, "protein": 13, "carbs": 28, "fats": 14, "serving_size": "1 slice", "category": "Italian Pizza"},
+    {"name": "Chicken Piccata", "calories": 420, "protein": 35, "carbs": 12, "fats": 22, "serving_size": "1 serving", "category": "Italian Main"},
+    {"name": "Chicken Parmesan", "calories": 530, "protein": 40, "carbs": 25, "fats": 28, "serving_size": "1 serving", "category": "Italian Main"},
+    {"name": "Grilled Salmon with Vegetables (Italian style)", "calories": 380, "protein": 32, "carbs": 10, "fats": 22, "serving_size": "1 serving", "category": "Italian Seafood"},
+
+    # ══════════════════════════════════════════════════════════════════════════
+    # MEXICAN CUISINE
+    # ══════════════════════════════════════════════════════════════════════════
+    # ── Mexican Starters & Snacks ──────────────────────────────────────────────
+    {"name": "Guacamole", "calories": 230, "protein": 3, "carbs": 12, "fats": 21, "serving_size": "1/2 cup", "category": "Mexican Starter"},
+    {"name": "Salsa (fresh tomato)", "calories": 35, "protein": 1, "carbs": 8, "fats": 0, "serving_size": "1/2 cup", "category": "Mexican Starter"},
+    {"name": "Tortilla Chips", "calories": 140, "protein": 2, "carbs": 18, "fats": 7, "serving_size": "1 oz (about 10 chips)", "category": "Mexican Snacks"},
+
+    # ── Mexican Mains ──────────────────────────────────────────────────────────
+    {"name": "Chicken Taco (soft, with veggies)", "calories": 170, "protein": 15, "carbs": 18, "fats": 6, "serving_size": "1 taco", "category": "Mexican Taco"},
+    {"name": "Beef Burrito", "calories": 550, "protein": 25, "carbs": 65, "fats": 20, "serving_size": "1 large", "category": "Mexican Burrito"},
+    {"name": "Chicken Fajitas (with peppers & onions, no tortilla)", "calories": 320, "protein": 35, "carbs": 15, "fats": 12, "serving_size": "1 serving", "category": "Mexican Main"},
+    {"name": "Bean & Cheese Enchilada", "calories": 280, "protein": 12, "carbs": 35, "fats": 12, "serving_size": "1 enchilada", "category": "Mexican Enchilada"},
+    {"name": "Quesadilla (cheese)", "calories": 450, "protein": 18, "carbs": 40, "fats": 25, "serving_size": "1 whole", "category": "Mexican Snacks"},
+
+    # ══════════════════════════════════════════════════════════════════════════
+    # CHINESE CUISINE
+    # ══════════════════════════════════════════════════════════════════════════
+    # ── Chinese Starters & Soups ───────────────────────────────────────────────
+    {"name": "Vegetable Spring Roll", "calories": 100, "protein": 3, "carbs": 12, "fats": 5, "serving_size": "1 roll", "category": "Chinese Starter"},
+    {"name": "Egg Drop Soup", "calories": 80, "protein": 6, "carbs": 5, "fats": 3, "serving_size": "1 cup", "category": "Chinese Soup"},
+    {"name": "Hot & Sour Soup", "calories": 100, "protein": 7, "carbs": 8, "fats": 4, "serving_size": "1 cup", "category": "Chinese Soup"},
+
+    # ── Chinese Mains ──────────────────────────────────────────────────────────
+    {"name": "Steamed Chicken with Broccoli", "calories": 300, "protein": 32, "carbs": 15, "fats": 8, "serving_size": "1 serving", "category": "Chinese Stir-Fry"},
+    {"name": "Shrimp with Mixed Vegetables", "calories": 250, "protein": 28, "carbs": 12, "fats": 7, "serving_size": "1 serving", "category": "Chinese Seafood"},
+    {"name": "Beef with Broccoli", "calories": 350, "protein": 30, "carbs": 20, "fats": 15, "serving_size": "1 serving", "category": "Chinese Stir-Fry"},
+    {"name": "Vegetable Fried Rice", "calories": 400, "protein": 10, "carbs": 65, "fats": 12, "serving_size": "1 cup", "category": "Chinese Rice"},
+    {"name": "Egg Fried Rice", "calories": 450, "protein": 12, "carbs": 60, "fats": 18, "serving_size": "1 cup", "category": "Chinese Rice"},
+    {"name": "General Tso's Chicken", "calories": 600, "protein": 35, "carbs": 50, "fats": 25, "serving_size": "1 serving", "category": "Chinese Main"},
+
+    # ══════════════════════════════════════════════════════════════════════════
+    # THAI CUISINE
+    # ══════════════════════════════════════════════════════════════════════════
+    # ── Thai Starters & Soups ──────────────────────────────────────────────────
+    {"name": "Thai Spring Rolls (fresh, not fried)", "calories": 130, "protein": 5, "carbs": 20, "fats": 3, "serving_size": "2 rolls", "category": "Thai Starter"},
+    {"name": "Tom Yum Soup (shrimp)", "calories": 150, "protein": 18, "carbs": 8, "fats": 5, "serving_size": "1 bowl", "category": "Thai Soup"},
+
+    # ── Thai Mains ─────────────────────────────────────────────────────────────
+    {"name": "Pad Thai (with chicken)", "calories": 600, "protein": 30, "carbs": 70, "fats": 20, "serving_size": "1 plate", "category": "Thai Noodles"},
+    {"name": "Green Curry with Chicken", "calories": 450, "protein": 28, "carbs": 15, "fats": 30, "serving_size": "1 serving (with coconut milk)", "category": "Thai Curry"},
+    {"name": "Massaman Curry (beef)", "calories": 500, "protein": 25, "carbs": 30, "fats": 32, "serving_size": "1 serving", "category": "Thai Curry"},
+    {"name": "Thai Basil Chicken (Gai Pad Krapow)", "calories": 380, "protein": 32, "carbs": 12, "fats": 22, "serving_size": "1 serving", "category": "Thai Stir-Fry"},
+
+    # ══════════════════════════════════════════════════════════════════════════
+    # JAPANESE CUISINE
+    # ══════════════════════════════════════════════════════════════════════════
+    # ── Japanese Starters & Sushi ──────────────────────────────────────────────
+    {"name": "Miso Soup", "calories": 80, "protein": 6, "carbs": 8, "fats": 3, "serving_size": "1 cup", "category": "Japanese Soup"},
+    {"name": "California Roll Sushi", "calories": 300, "protein": 10, "carbs": 45, "fats": 8, "serving_size": "6 pieces", "category": "Japanese Sushi"},
+    {"name": "Spicy Tuna Roll", "calories": 320, "protein": 15, "carbs": 35, "fats": 12, "serving_size": "6 pieces", "category": "Japanese Sushi"},
+
+    # ── Japanese Mains ─────────────────────────────────────────────────────────
+    {"name": "Chicken Teriyaki", "calories": 400, "protein": 35, "carbs": 30, "fats": 12, "serving_size": "1 serving", "category": "Japanese Main"},
+    {"name": "Salmon Nigiri (2 pieces)", "calories": 150, "protein": 14, "carbs": 18, "fats": 5, "serving_size": "2 pieces", "category": "Japanese Sushi"},
+    {"name": "Tonkotsu Ramen", "calories": 700, "protein": 30, "carbs": 70, "fats": 30, "serving_size": "1 bowl", "category": "Japanese Noodles"},
+    {"name": "Shoyu Ramen", "calories": 550, "protein": 28, "carbs": 65, "fats": 18, "serving_size": "1 bowl", "category": "Japanese Noodles"},
+
+    # ══════════════════════════════════════════════════════════════════════════
+    # AMERICAN / FAST FOOD
+    # ══════════════════════════════════════════════════════════════════════════
+    # ── Burgers & Sandwiches ───────────────────────────────────────────────────
+    {"name": "Cheeseburger (standard)", "calories": 300, "protein": 15, "carbs": 30, "fats": 15, "serving_size": "1 burger", "category": "American Fast Food"},
+    {"name": "Big Mac", "calories": 550, "protein": 25, "carbs": 45, "fats": 30, "serving_size": "1 burger", "category": "American Fast Food"},
+    {"name": "Whopper", "calories": 670, "protein": 28, "carbs": 50, "fats": 38, "serving_size": "1 burger", "category": "American Fast Food"},
+    {"name": "Grilled Chicken Sandwich", "calories": 400, "protein": 30, "carbs": 40, "fats": 12, "serving_size": "1 sandwich", "category": "American Fast Food"},
+
+    # ── Sides & Other ──────────────────────────────────────────────────────────
+    {"name": "French Fries (medium)", "calories": 320, "protein": 4, "carbs": 45, "fats": 15, "serving_size": "medium", "category": "American Sides"},
+    {"name": "Chicken Nuggets (10 pieces)", "calories": 470, "protein": 25, "carbs": 30, "fats": 28, "serving_size": "10 pieces", "category": "American Fast Food"},
+
+    # ══════════════════════════════════════════════════════════════════════════
+    # MEDITERRANEAN / GREEK CUISINE
+    # ══════════════════════════════════════════════════════════════════════════
+    {"name": "Greek Salad (with feta, olives, olive oil)", "calories": 280, "protein": 10, "carbs": 15, "fats": 22, "serving_size": "1 large serving", "category": "Mediterranean Salad"},
+    {"name": "Hummus with Pita", "calories": 300, "protein": 12, "carbs": 40, "fats": 12, "serving_size": "1 serving", "category": "Mediterranean Starter"},
+    {"name": "Grilled Falafel", "calories": 320, "protein": 12, "carbs": 35, "fats": 15, "serving_size": "4 pieces", "category": "Mediterranean"},
+    {"name": "Grilled Fish (Mediterranean style with herbs)", "calories": 250, "protein": 35, "carbs": 5, "fats": 10, "serving_size": "150g", "category": "Mediterranean Seafood"},
+    {"name": "Tzatziki (cucumber yogurt dip)", "calories": 90, "protein": 5, "carbs": 6, "fats": 6, "serving_size": "1/2 cup", "category": "Mediterranean Dip"},
+    {"name": "Olive Oil (drizzle)", "calories": 120, "protein": 0, "carbs": 0, "fats": 14, "serving_size": "1 tbsp", "category": "Mediterranean Fat"},
+
+    # Add more sections as needed (e.g., French: Croissant, Ratatouille; Korean: Bibimbap, Kimchi; etc.) by following the same pattern.
 ]
 
 
